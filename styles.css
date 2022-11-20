@@ -1,4 +1,6 @@
 body {
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: #ececec;
 }
 header {
@@ -6,6 +8,16 @@ header {
 }
 
 .logo {
+  position: absolute;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 24px;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
 }
 .logo-web {
   color: #2196f3;
@@ -14,13 +26,37 @@ header {
 .logo-studio {
   color: #000000;
 }
+
+.nav-links {
+  color: #212121;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.nav-links:hover {
+  color: #2196f3;
+}
+
+.nav-contact {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.nav-contact:hover {
+  color: #2196f3;
+}
+
 .motto {
   background-color: #2f303a;
   width: 1600px;
   height: 600px;
-  margin-top: 80px;
-  margin-left: 0px;
-  position: absolute;
 }
 
 a {
@@ -35,6 +71,12 @@ h1 {
   margin-top: 280px;
   padding: 200, 452, 280, 452;
   position: absolute;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   text-align: center;
 }
 
@@ -49,6 +91,49 @@ button {
   border-radius: 4px;
   position: absolute;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.atuts-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.atuts-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.team-names {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.team-profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 footer {
