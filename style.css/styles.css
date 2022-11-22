@@ -1,8 +1,12 @@
 body {
   font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
-
-  background: #ffffff;
+  font-style: normal;
+  background-color: #ffffff;
+  color: #212121;
+  font-size: 14px;
+  font-weight: 400px;
+  letter-spacing: 0.03em;
 }
 
 .logo {
@@ -10,7 +14,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 .logo-web {
   color: #2196f3;
@@ -20,44 +23,50 @@ body {
   color: #000000;
 }
 
-.nav-links {
-  color: #212121;
-  font-style: normal;
+.logo-studio-white {
+  color: #ffffff;
+}
+
+element-style {
+  list-style: none;
+  color: #2196f3;
+}
+
+.list-dots {
+  list-style: none;
+}
+
+.nav-list {
   font-weight: 500;
   line-height: 1.14;
-  font-size: 14px;
   letter-spacing: 0.02em;
 }
 
-.nav-links:hover {
+.nav-list:hover {
   color: #2196f3;
 }
 
-.nav-links:focus {
+.nav-list:focus {
   color: #2196f3;
 }
 
-.nav-contact {
-  font-style: normal;
+.current {
+  color: #2196f3;
+}
+
+.header-contact {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
 }
 
-.nav-contact:hover {
+.header-contact:hover {
   color: #2196f3;
 }
 
-.nav-contact:focus {
+.header-contact:focus {
   color: #2196f3;
-}
-
-.motto {
-  background-color: #2f303a;
-  width: 1600px;
-  height: 600px;
 }
 
 a {
@@ -65,15 +74,8 @@ a {
   cursor: pointer;
 }
 
-h1 {
-  color: #ffffff;
+.hero-title {
   width: 696px;
-  height: 120px;
-  margin-left: 452px;
-  margin-top: 280px;
-  padding: 200, 452, 280, 452;
-  position: absolute;
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -86,64 +88,49 @@ h1 {
   background-color: #2196f3;
   color: #ffffff;
   width: 200px;
-  height: 50px;
-  margin-left: 700px;
-  margin-top: 430px;
   border-style: none;
   border-radius: 4px;
-  position: absolute;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.86;
   letter-spacing: 0.06em;
+  font-family: inherit;
+  cursor: pointer;
 }
 
 .atuts-header {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
 }
 
 .atuts-description {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-size: 14px;
   color: #757575;
 }
 
-h2 {
+.section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
 }
 
 .section-team {
-  background: #f5f4fa;
+  background-color: #f5f4fa;
 }
 
 .team-names {
   font-weight: 500;
-  line-height: 19px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #212121;
 }
 
 .team-profession {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
   color: #757575;
 }
 
@@ -152,21 +139,13 @@ footer {
 }
 
 .footer-adress {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: #ffffff;
-  font-style: normal;
 }
 
 .footer-contact {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
 }
 
 .footer-adress:hover {
@@ -192,9 +171,8 @@ footer {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  letter-spacing: 0.03em;
-  color: #212121;
   background-color: #f5f4fa;
+  cursor: pointer;
 }
 
 .button-offer:hover {
@@ -212,13 +190,10 @@ footer {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
 }
 
 .project-type {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
   color: #757575;
 }
