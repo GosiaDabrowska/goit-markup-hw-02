@@ -1,13 +1,24 @@
 body {
   font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  background-color: #ffffff;
-  color: #212121;
+  background-color: var(--background-color);
+  color: var(--main-text-color);
   font-size: 14px;
   font-weight: 400px;
   letter-spacing: 0.03em;
 }
+
+:root {
+  --background-color: #ffffff;
+  --section-color: #f5f4fa;
+  --footer-color: #2f303a;
+  --action-color: #2196f3;
+  --borders-color: #eeeeee;
+  --logo-and-shadows-color: #000000;
+  --main-text-color: #212121;
+  --description-text-color: #757575;
+}
+/* gdzieś jest użyty kolor #ECECEC ale nie mogę znaleźć gdzie, zatem go nigdzie nie przyporządkowałam :( */
 
 .logo {
   font-family: 'Raleway';
@@ -16,57 +27,52 @@ body {
   line-height: 1.19;
 }
 .logo-web {
-  color: #2196f3;
+  color: var(--action-color);
 }
 
 .logo-studio {
-  color: #000000;
+  color: var(--logo-and-shadows-color);
 }
 
 .logo-studio-white {
-  color: #ffffff;
-}
-
-element-style {
-  list-style: none;
-  color: #2196f3;
-}
-
-.list-dots {
-  list-style: none;
+  color: var(--background-color);
 }
 
 .nav-list {
+  list-style: none;
+}
+
+.nav-links {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.nav-list:hover {
-  color: #2196f3;
+.nav-links:hover {
+  color: var(--action-color);
 }
 
-.nav-list:focus {
-  color: #2196f3;
+.nav-links:focus {
+  color: var(--action-color);
 }
 
 .current {
-  color: #2196f3;
+  color: var(--action-color);
 }
 
 .header-contact {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--description-text-color);
 }
 
 .header-contact:hover {
-  color: #2196f3;
+  color: var(--action-color);
 }
 
 .header-contact:focus {
-  color: #2196f3;
+  color: var(--action-color);
 }
 
 a {
@@ -85,8 +91,8 @@ a {
 }
 
 .button-order {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--action-color);
+  color: var(--background-color);
   width: 200px;
   border-style: none;
   border-radius: 4px;
@@ -97,6 +103,9 @@ a {
   line-height: 1.86;
   letter-spacing: 0.06em;
   font-family: inherit;
+
+  /*tu chciałam tak jak w figma font-family: roboto; ale to nie działa, jak to wstawic?*/
+
   cursor: pointer;
 }
 
@@ -109,7 +118,7 @@ a {
 .atuts-description {
   line-height: 1.71;
   font-size: 14px;
-  color: #757575;
+  color: var(--description-text-color);
 }
 
 .section-title {
@@ -120,7 +129,7 @@ a {
 }
 
 .section-team {
-  background-color: #f5f4fa;
+  background-color: var(--section-color);
 }
 
 .team-names {
@@ -131,16 +140,16 @@ a {
 .team-profession {
   font-size: 16px;
   line-height: 1.19;
-  color: #757575;
+  color: var(--description-text-color);
 }
 
 footer {
-  background-color: #2f303a;
+  background-color: var(--footer-color);
 }
 
 .footer-adress {
   line-height: 1.71;
-  color: #ffffff;
+  color: var(--background-color);
 }
 
 .footer-contact {
@@ -148,22 +157,24 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
+/*Czy ten jeden kolor powyżej w footer-contact ma być opisany rgba tak jak wyżej czy jako var?*/
+
 .footer-adress:hover {
-  color: #2196f3;
+  color: var(--action-color);
 }
 
 .footer-adress:focus {
-  color: #2196f3;
+  color: var(--action-color);
 }
 .footer-contact:hover {
-  color: #2196f3;
+  color: var(--action-color);
 }
 
 .footer-contact:focus {
-  color: #2196f3;
+  color: var(--action-color);
 }
 
-/* style css odrębne dla drugiej strony projektu */
+/* Poniżej są style css odrębne dla drugiej strony projektu */
 
 .button-offer {
   border-style: none;
@@ -171,18 +182,18 @@ footer {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  background-color: #f5f4fa;
+  background-color: var(--section-color);
   cursor: pointer;
 }
 
 .button-offer:hover {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--action-color);
+  color: var(--background-color);
 }
 
 .button-offer:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--action-color);
+  color: var(--background-color);
 }
 
 .project-name {
@@ -195,5 +206,5 @@ footer {
 .project-type {
   font-size: 16px;
   line-height: 1.88;
-  color: #757575;
+  color: var(--description-text-color);
 }
