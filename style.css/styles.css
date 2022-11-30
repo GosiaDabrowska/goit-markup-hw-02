@@ -79,6 +79,10 @@ a {
   cursor: pointer;
 }
 
+.hero-section {
+  background-color: var(--accent-color);
+}
+
 .hero-title {
   width: 696px;
   font-weight: 900;
@@ -87,7 +91,6 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-  background-color: var(--accent-color);
   color: var(--background-color);
 }
 
@@ -101,7 +104,7 @@ a {
 
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.86;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   font-family: 'roboto';
   cursor: pointer;
